@@ -1,0 +1,73 @@
+/* 
+    Direct child selector
+    syntax:
+    parent > child
+*/
+
+.parent  {
+    width: 400px;
+    height: 400px;
+    background: red;
+    /* transition-property:background;
+    transition-duration: 5s; */
+    /* shorthand for transition */
+    transition: background 3s;
+    display: inline-block;
+    
+
+
+}
+.parent:hover{
+    background: orange;
+}
+
+.parent > .child{
+    /* state 1 */
+    width: 200px;
+    height: 200px;
+    background: green;
+    transition: all 3s;
+}
+.parent > .child:hover{
+    /* state 2 */
+    background: blue;
+
+}
+[data-parent="parent"]{
+    width: 500px;
+    height: 400px;
+    background: purple;
+    display: inline-block;
+}
+
+
+[data-parent="parent"] > [data-child="child"]{
+
+    /* state 1 */
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    display: inline-block;
+    transition: all 3s linear 0.1s;
+    border-radius: 100px;
+    transform: translate(0px, 0px);
+    
+}
+
+[data-parent="parent"] > [data-child="child"]:hover{
+    /* state 2 */
+     background: rgb(250, 2, 2);
+     transform: translate(0px, 300px);
+}
+.c2{
+    transition: all 3s linear 0.2s;
+
+}
+.c3{
+    transition: all 3s linear 0.2s;
+
+}
+.c4{
+    transition: all 3s linear 0.2s;
+
+}

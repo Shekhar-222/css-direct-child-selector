@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bouncing Ball</title>
+        <style>
+            .s1{
+                height: 150px;
+                width: 150px;
+                border-radius: 150px;
+                background: red;
+                animation-name: abc;
+                animation-duration: 0.8s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                display: inline-block;
+                
+            }
+            @keyframes abc {
+                from{
+                    transform: translate(0px,0px);
+
+                }
+                to{
+                    transform: translate(0px,590px);
+
+                }
+            }
+            .s2{
+                background: blue;
+                animation-delay: 0.2s;
+            }
+            .s3{
+                background: green;
+                animation-delay: 0.4s;
+            }
+            .s4{
+                background: yellow;
+                animation-delay: 0.6s;
+            }
+            .s5{
+                background: orange;
+                animation-delay: 0.8s;
+            }
+            .s6{
+                background: brown;
+                animation-delay: 1s;
+            }
+            .s7{
+                background: palevioletred;
+                animation-delay: 1.2s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="s1"></div>
+        <div class="s1 s2"></div>
+        <div class="s1 s3"></div>
+        <div class="s1 s4"></div>
+        <div class="s1 s5"></div>
+        <div class="s1 s6"></div>
+        <div class="s1 s7"></div>
+        
+    </body>
+</html>

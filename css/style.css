@@ -60,14 +60,14 @@
      transform: translate(0px, 300px);
 }
 .c2{
-    transition: all 3s linear 0.2s;
+    transition: all 3s linear 0.2s !important; 
 
 }
 .c3{
-    transition: all 3s linear 0.2s;
+    transition: all 3s linear 0.2s !important;
 
 }
 .c4{
-    transition: all 3s linear 0.2s;
+    transition: all 3s linear 0.2s !important;
 
 }
